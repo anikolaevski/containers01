@@ -13,27 +13,6 @@ test('Test Character', () => {
     name: 'Персонаж',
     health: 10,
     level: 2,
-    attack: 5,
-    defense: 5,
-  };
-
-  expect(result).toEqual(expected);
-});
-
-test('Test Character levelUp', () => {
-  const sourceData = {
-    name: 'Персонаж', health: 10, level: 2,
-  };
-
-  const result = new Character(sourceData);
-  result.levelUp();
-
-  const expected = {
-    name: 'Персонаж',
-    health: 100,
-    level: 3,
-    attack: 6,
-    defense: 6,
   };
 
   expect(result).toEqual(expected);
@@ -49,44 +28,6 @@ test('Test Bowman', () => {
   const expected = {
     name: 'Лучник',
     health: 10,
-    level: 2,
-    attack: 25,
-    defense: 25,
-  };
-
-  expect(result).toEqual(expected);
-});
-
-test('Test Bowman levelUp', () => {
-  const sourceData = {
-    name: 'Лучник', health: 10, level: 2,
-  };
-
-  const result = new Bowman(sourceData);
-  result.levelUp();
-
-  const expected = {
-    name: 'Лучник',
-    health: 100,
-    level: 3,
-    attack: 30,
-    defense: 30,
-  };
-
-  expect(result).toEqual(expected);
-});
-
-test('Test Dead Bowman levelUp', () => {
-  const sourceData = {
-    name: 'Лучник', health: 0, level: 2,
-  };
-
-  const result = new Bowman(sourceData);
-  result.levelUp();
-
-  const expected = {
-    name: 'Лучник',
-    health: 0,
     level: 2,
     attack: 25,
     defense: 25,
