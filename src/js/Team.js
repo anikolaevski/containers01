@@ -1,3 +1,4 @@
+/* eslint-disable no-throw-literal */
 // eslint-disable-next-line import/prefer-default-export
 export class Team {
   constructor() {

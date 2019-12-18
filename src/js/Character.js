@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 export class Character {
   constructor(obj) {
     this.name = obj.name;

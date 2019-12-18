@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { Team } from './Team';
 import { Character } from './Character';
 
