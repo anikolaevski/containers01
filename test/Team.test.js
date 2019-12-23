@@ -71,7 +71,7 @@ test('Test Throw error on duplicate add', () => {
   expect(totest).toThrow();
 });
 
-test('Test Throw error on duplicate mass add', () => {
+test('Test Throw error on duplicate mass addition', () => {
   function totest() {
     const myTeam = new Team();
     const obj1 = new Character({ name: 'Иван', health: '100', level: '80' });
