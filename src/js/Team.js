@@ -8,6 +8,7 @@ export class Team {
     if (!this.members.has(name)) {
       this.members.add(name);
     } else {
+      // eslint-disable-next-line no-throw-literal
       throw (`Объект ${name} уже существует!`);
     }
   }
